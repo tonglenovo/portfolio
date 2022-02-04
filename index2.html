@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <title>My First Website</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Title</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutme">About Me</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="bg-dark text-light p-5 p-lg-0 pt-5 text-center text-sm-start">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <div>
+                        <h1>I am <span class="text-warning">Koh Yi Tong</span></h1>
+                        <p class="lead my-4">Enjoys Development and Design, Programming, Front-end and Back-end, as well as UI and UX.</p>
+                        <a class="btn btn-primary btn-lg" href="mailto:sianxiao@hotmail.com">Email me</a>
+                    </div>
+                    <img class="img-fluid w-50 d-none d-sm-block mb-5" src="img/bg04.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutme" class="p-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md">
+                        <img src="img/bg04.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md p-5">
+                        <h2>About me</h2>
+                        <p class="lead">I am planning to make this website like a journey on myself and a simple portfolio to show example of my HTML,CSS,JS,PHP and MySQL skill. </p>
+                        <p>I really enjoy doing coding for developing android apps and simple website. I am also trying to learn other languages syntax and try to do a full stack next time. You are able to see what language did I learn through “Skill”. Email me and I will sent my resume for reference. I hope you had enjoy watching this. </p>
+                        <a class="btn btn-light mt-3" href="#">
+                            <i class="bi bi-chevron-right">Read more</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--        <section class="bg-primary text-light p-5">
+                    <div class="container">
+                        <div class="d-md-flex justify-content-between align-items-center">
+                            <h3 class="mb-3 mb-md-0">Sent me an offer</h3>
+        
+                            <div class="input-group news-inputs">
+                                <input type="text" class="form-control" placeholder="Enter email">
+                                <button class="btn btn-dark btn-lg" type="button">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>-->
+
+        <section class="p-5 bg-dark">
+            <div class="container">
+                <div class="row text-center g-4">
+                    <div class="col-md">
+                        <div class="card ">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-laptop"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Education</h3>
+                                <p class="card-text">
+                                    2017-2019 National Service<br>
+                                    2014-2017 Diploma of Mobile Software Development<br>
+                                    2012-2013 Nitec of Information Communication<br>
+                                    2008-2011 First Toa Payoh Secondary School<br>
+                                    2002-2007 Pei Chun Public School
+                                </p>
+                                <a href="#" class="btn btn-primary">View Cert</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-secondary text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-person-square"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Work Experience</h3>
+                                <p class="card-text">
+                                    2019-now Desktop Engineer at Schools<br>2016-2017 Poly Intern in RP
+                                    <!--                                    2017-2019 National Service<br>2014-2017 Diploma of Mobile Software Development <br>2012-2013 Nitec of Information Communication-->
+                                </p>
+                                <a href="#" class="btn btn-dark">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Skill</h3>
+                                <p class="card-text">
+                                    PHP<br>
+                                    HTML<br>
+                                    CSS<br>
+                                    MySQL<br>
+                                    Android Studio<br>
+                                    <!--                                <ul>
+                                                                        <li>PHP</li>
+                                                                        <li>HTML</li>
+                                                                        <li>CSS</li>
+                                                                        <li>MySQL</li>
+                                                                        <li>Android Studio</li>
+                                                                    </ul>-->
+                                    <!--                                    2017-2019 National Service<br>2014-2017 Diploma of Mobile Software Development <br>2012-2013 Nitec of Information Communication-->
+                                </p>
+                                <a href="#" class="btn btn-primary">View Sample</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="p-5 ">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md p-5">
+                        <h2>Portfolio</h2>
+                        <p class="lead">This section will showcase some of my works</p>
+                        <p>I will plan how to display the screenshot later, this is just a temp for now</p>
+                        <a class="btn btn-light mt-3" href="#">
+                            <i class="bi bi-chevron-right">Read more</i>
+                        </a>
+                    </div>
+                    <div class="col-md">
+                        <img src="img/bg04.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--        <section id="questions" class="p-5">
+                    <div class="container">
+                        <h2 class="text-center mb-4">Frequently Asked Question</h2>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                                        Where exactly are you located?
+                                    </button>
+                                </h2>
+                                <div id="question-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae fuga animi distinctio perspiciatis adipisci velit maiores totam tempora accusamus modi explicabo accusantium consequatur, praesentium rem quisquam molestias at quos vero. Officiis ad velit doloremque at. Dignissimos praesentium necessitatibus natus corrupti cum consequatur aliquam! Minima molestias iure quam distinctio velit.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                                        How much does it cost to attend?
+                                    </button>
+                                </h2>
+                                <div id="question-two" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae fuga animi distinctio perspiciatis adipisci velit maiores totam tempora accusamus modi explicabo accusantium consequatur, praesentium rem quisquam molestias at quos vero. Officiis ad velit doloremque at. Dignissimos praesentium necessitatibus natus corrupti cum consequatur aliquam! Minima molestias iure quam distinctio velit.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                                        What do I need to Know?
+                                    </button>
+                                </h2>
+                                <div id="question-three" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae fuga animi distinctio perspiciatis adipisci velit maiores totam tempora accusamus modi explicabo accusantium consequatur, praesentium rem quisquam molestias at quos vero. Officiis ad velit doloremque at. Dignissimos praesentium necessitatibus natus corrupti cum consequatur aliquam! Minima molestias iure quam distinctio velit.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                                        How Do I sign up?
+                                    </button>
+                                </h2>
+                                <div id="question-four" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae fuga animi distinctio perspiciatis adipisci velit maiores totam tempora accusamus modi explicabo accusantium consequatur, praesentium rem quisquam molestias at quos vero. Officiis ad velit doloremque at. Dignissimos praesentium necessitatibus natus corrupti cum consequatur aliquam! Minima molestias iure quam distinctio velit.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                                        Do you help me find a job?
+                                    </button>
+                                </h2>
+                                <div id="question-five" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae fuga animi distinctio perspiciatis adipisci velit maiores totam tempora accusamus modi explicabo accusantium consequatur, praesentium rem quisquam molestias at quos vero. Officiis ad velit doloremque at. Dignissimos praesentium necessitatibus natus corrupti cum consequatur aliquam! Minima molestias iure quam distinctio velit.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>-->
+
+        <!--        <section id="instructors" class="p-5 bg-primary">
+                    <div class="container">
+                        <h2 class="text-center text-white">Our Instructors</h2>
+                        <p class="lead text-center text-white mb-5">Our instructors all have 5+ years working as a web developer in the industry</p>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card bg-light">
+                                    <div class="card-body text-center">
+                                        <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="">
+                                        <h3 class="card-title mb-3">John Dee</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.</p>
+                                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card bg-light">
+                                    <div class="card-body text-center">
+                                        <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="">
+                                        <h3 class="card-title mb-3">Jane Doe</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.</p>
+                                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card bg-light">
+                                    <div class="card-body text-center">
+                                        <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3" alt="">
+                                        <h3 class="card-title mb-3">Steve Smith</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.</p>
+                                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card bg-light">
+                                    <div class="card-body text-center">
+                                        <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="">
+                                        <h3 class="card-title mb-3">Sara Smith</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.</p>
+                                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>-->
+
+        <!--        <section class="p-5">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-md">
+                                <h2 class="text-center mb-4">Contact Info</h2>
+                                <ul class="list-group list-group-flush lead">
+                                    <li class="list-group-item">
+                                        <span class="fw-bold">Main Location:</span> 50 Main st Boston MA
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="fw-bold">Enrollment Phone:</span> (555) 555-5555
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="fw-bold">Student Phone:</span> (333) 333-3333
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="fw-bold">Enrollment Email:</span> (555) enroll@frontendbc.test
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="fw-bold">Student Email:</span> (555) enroll@frontendbc.test
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>-->
+
+        <section class="p-5 bg-dark text-light" id="testimonials">
+            <div class="container">
+                <h2 class="text-center">Testimonials</h2>
+                <p class="lead text-center mb-5">This is all my review about my job</p>
+                <figure class="card-title">
+                    <blockquote class="blockquote">
+                        <p>Yi Tong has been integral to SJI Junior ever since he joined us. He has a great attitube and is always ready to lend a head even if it may not be within his scope.
+                            He was a real help during PSLE peroid especially for the oral exams! Thanks Yi Tong!</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer text-white">
+                        Rowena Khoo <cite title="Source Title">SJIJ Teacher</cite>
+                    </figcaption>
+                </figure>
+
+                <figure class="text-end">
+                    <blockquote class="blockquote">
+                        <p>Yi Tong always goes beyond the call of duty to
+                            help whenever I have an IT-related issue. And
+                            even when the solution is something I could
+                            have resolved on my own (if I had thought of it),
+                            Yi Tong does it professionally and then goes on
+                            with his daily work, He maintains very good
+                            and healthy relations with all teaching and non-
+                            teaching staff and possesses a very positive
+                            attitube, He will gladly walk to your location to
+                            be service and always comes with a smile.
+                        </p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer text-white">
+                        Callistus Chan <cite title="Source Title">SJIJ Teacher</cite>
+                    </figcaption>
+                </figure>
+
+
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>Thank you, Yi Tong, for all your work
+                            and help with DSA! I’m sure the boys
+                            appreciate it too! Happy Teacher Day!
+                        </p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer text-white">
+                        Chitra <cite title="Source Title">SJIJ Teacher</cite>
+                    </figcaption>
+                </figure>
+
+                <figure class="text-end">
+                    <blockquote class="blockquote">
+                        <p>Happy Teacher’s Day / TA Day :)
+                            Yi Tong, thank you for your help whenever I texted you.
+                            You are always so friendly and helpful!
+                        </p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer text-white">
+                        Lisa <cite title="Source Title">GO Staff</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!--        <section class="p-5 bg-primary" id="testimonials">
+                    <div class="container">
+                        <h2 class="text-center text-white">Testimonials</h2>
+                        <p class="lead text-center text-white mb-5">This is all my review about my job</p>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card bg-light">
+                                    <div class="card-body text-center">
+                                                                        <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="">
+                                        <h3 class="card-title mb-3">Rowena Khoo</h3>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <p class="card-text">Yi Tong has been integral to SJI Junior ever 
+                                            since he joined us. He has a great attitude
+                                            and is always ready to lend a hand even if it
+                                            may not be within his scope. He was a real
+                                            help during the PSLE period especially for
+                                            the oral exams! Thanks Yi Tong!
+                                        </p>
+        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card bg-light">
+                                    <div class="card-body text-center">
+                                                                        <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="">
+                                        <h3 class="card-title mb-3">Callistus Chan</h3>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <p class="card-text">Yi Tong always goes beyond the call of duty to
+                                            help whenever I have an IT-related issue. And
+                                            even when the solution is something I could
+                                            have resolved on my own (if I had thought of it),<br>
+                                            Yi Tong does it professionally and then goes on
+                                            with his daily work, He maintains very good
+                                            and healthy relations with all teaching and non-
+                                            teaching staff and possesses a very positive
+                                            attitube, He will gladly walk to your location to
+                                            be service and always comes with a smile.
+                                        </p>
+        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card bg-light">
+                                    <div class="card-body text-center">
+                                                                        <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="">
+                                        <h3 class="card-title mb-3">Chitra</h3>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <p class="card-text">Thank you, Yi Tong, for all your work
+                                            and help with DSA! I’m sure the boys
+                                            appreciate it too! Happy Teacher Day!
+        
+                                        </p>
+        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card bg-light">
+                                    <div class="card-body text-center">
+                                                                        <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="">
+                                        <h3 class="card-title mb-3">Lisa</h3>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <p class="card-text">Happy Teacher’s Day / TA Day :)
+                                            Yi Tong, thank you for your help whenever I texted you.
+                                            You are always so friendly and helpful!
+        
+        
+                                        </p>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>-->
+        
+        <section class="p-5" id="testimonials">
+            <div class="container">
+                <h2 class="text-center">Picture</h2>
+                <p class="lead text-center mb-5">My Memories to share</p>
+            </div>
+        </section>
+
+        <footer class="p-5 bg-dark text-white text-center position-relative">
+            <div class="container">
+                <p class="lead">Copyright &copy; 2022 Frontend Bootcamp</p>
+                <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
+            </div>
+        </footer>
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        -->
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoibG9sc251YiIsImEiOiJja3lvbnBmaTcwMXh0MzF0ODE5NnBqeTNxIn0.THKSdSDeBFE1XUFmhddCFw';
+            const map = new mapboxgl.Map({
+                container: 'map', // container ID
+                style: 'mapbox://styles/mapbox/streets-v11', // style URL
+                center: [-71.060982, 42.35725], // starting position [lng, lat]
+                zoom: 18 // starting zoom
+            });
+        </script>
+    </body>
+</html>
