@@ -16,6 +16,13 @@ body::before {
     }
 }
 
+@media screen and (max-width: 770px) {
+    .btncontainer{
+        display: block;
+    }
+}
+
+
 .carousel-item{
     height: 32rem;
     background: #777;
@@ -24,3 +31,4 @@ body::before {
 .checked {
   color: orange;
 }
+
