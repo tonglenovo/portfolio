@@ -1,0 +1,340 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Testimonial Slider</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .checked {
+                color: orange;
+            }
+            *{
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+            }
+            .hero{
+                width: 100%;
+                height: 100vh;
+                background: #f6fbff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            h1{
+                font-size: 30px;
+                position: relative;
+                margin-bottom: 80px;
+            }
+            h1::after{
+                content: '';
+                width: 150px;
+                height: 3px;
+                background: linear-gradient(to right, #f44336, #9f4db5);
+                position: absolute;
+                bottom: -20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .review-box{
+                width: 90%;
+                max-width: 700px;
+                height: 300px;
+                border-radius: 10px;
+                box-shadow: -10px 10px 40px rgba(0,0,0,0.25);
+                position: relative;
+                overflow: hidden;
+            }
+            .card{
+                height: 300px;
+                padding: 40px;
+                color: #777;
+                line-height: 22px;
+                box-sizing: border-box;
+                background: #fff;
+                position: relative;
+            }
+            
+            ::selection{
+                background: #f44336;
+                color: #fff;
+            }
+            .profile{
+                display:flex;
+                align-items: center;
+                margin-bottom: 40px;
+            }
+            .profile h3{
+                font-size: 26px;
+                color: #f44336;
+                margin-bottom: 8px;
+            }
+
+            #slide{
+                width: 100%;
+                padding-right: 60px;
+                box-sizing: border-box;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: 0.5s;
+            }
+            .sidebar{
+                width: 60px;
+                height: 100%;
+                padding: 15px 0;
+                box-sizing: border-box;
+                background: #f44336;
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .sidebar img{
+                width: 25px;
+                padding: 5px;
+                background: #fff;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+            <h1>Customer Reviews</h1>
+            <div class="review-box">
+                <div id="slide">
+                    <div class="card">
+                        <div class="profile">
+                            <div>
+                                <h3>Chui Su Fun</h3>
+                                <p>Admin Manager</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+                        </div>
+                        <p>Yi Tong know his way around MOE IT systems. He is 
+                            very patient whenever we need help to troubleshoot 
+                            IT problems on our laptops. He does not hesistate 
+                            to help print parent volunteer passes even though 
+                            it is not part of his job scope.</p>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <div>
+                                <h3>Winnie Ho</h3>
+                                <p>Subject Head (Math)</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+                        </div>
+                        <p>"Yi Tong is responsible, proactive and reacts very promptly when help is needed.
+
+                            He is very knowledgeable in his area of work and is able to resolve technical issues quickly, easing the stress of teachers in class.
+
+                            He provided technical support for the running of the P5 Code for Fun programme and all the sessions had been carried smoothly.
+
+                            He also assisted teachers in class resolved connection issues when they needed to carry out Touch Typing on laptops during PAL lessons."</p>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <div>
+                                <h3>Vidya Premapadmanabhan</h3>
+                                <p>Subject Head (English)</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+                        </div>
+                        <p>Yi Tong is very efficient and prompt when you need help for any IT related matters. He goes the extra mile in helping to resolve issues effectively so that lessons can go on smoothly. He is definitely an asset to any organisation.</p>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <div>
+                                <h3>Lim Yew Tee Collin </h3>
+                                <p>Vice-Principal (Admin)</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                        </div>
+                        <p>Yi Tong is very efficient and prompt when you need help for any IT related matters. He goes the extra mile in helping to resolve issues effectively so that lessons can go on smoothly. He is definitely an asset to any organisation.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="profile">
+                            <div>
+                                <h3>Janet</h3>
+                                <p>Mathematics Teacher</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+                        </div>
+                        <p>Has an acute sensing on  helping to troubleshoot and is resourceful to know where to solicit help and solutions to circumvent, prevent or solve the issue. </p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="profile">
+                            <div>
+                                <h3>Sharon Gan</h3>
+                                <p>Teacher</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                        </div>
+                        <p>Yi Tong is always ready to help out and will try his best to trouble shoot any issues.  </p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="profile">
+                            <div>
+                                <h3>Janet</h3>
+                                <p>Mathematics Teacher</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+                        </div>
+                        <p>Has an acute sensing on  helping to troubleshoot and is resourceful to know where to solicit help and solutions to circumvent, prevent or solve the issue. </p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="profile">
+                            <div>
+                                <h3>Caroline Chan Kum Mei</h3>
+                                <p>PE Teacher</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+                        </div>
+                        <p>Yitong is a dedicated and responsible worker who is able to work well with others. He is also very efficient and would get his duties done well and on time too. He would often try his best to assist teachers with their IT requests. With Yitong's good work attitude and ability to work well in teams, he will be able to take on greater responsibilities. </p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="profile">
+                            <div>
+                                <h3>Kalimuthu</h3>
+                                <p>Operation Manager </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+                        </div>
+                        <p>I like to thank you for your support given to me whenever call you for help you are there to help and settle the problem immediately </p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="profile">
+                            <div>
+                                <h3>Rowena</h3>
+                                <p>PE Teacher</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+                        </div>
+                        <p>It’s been awesome having you around Yi Tong! If only you didn’t need to leave! You’re always ready to help even when the issues are tough and always offer a workaround for us. I’m sure everyone is eternally grateful! All the best in your future endeavours! </p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="profile">
+                            <div>
+                                <h3>Santha</h3>
+                                <p>Admin Staff</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                        </div>
+                        <p>Has an acute sensing on  helping to troubleshoot and is resourceful to know where to solicit help and solutions to circumvent, prevent or solve the issue. </p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="profile">
+                            <div>
+                                <h3>Philip Muthiah </h3>
+                                <p>PE Teacher</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                        </div>
+                        <p>Attends to queries and helps solves technical issues promptly. </p>
+                    </div>
+                    
+                </div>
+                
+                <div class="sidebar">
+                    <img src="img/up-arrow.png" alt="" id="upArrow"/>
+                    <img src="img/down-arrow.png" alt="" id="downArrow"/>
+                </div>
+            </div>
+        </div>
+        <script>
+            var slide = document.getElementById("slide");
+            var upArrow = document.getElementById("upArrow");
+            var downArrow = document.getElementById("downArrow");
+            
+            let x = 0;
+            upArrow.onclick = function(){
+                 if(x < 0){
+                    x  = x + 300;
+                slide.style.top =x + "px";
+                }
+                
+            }
+            
+            downArrow.onclick = function(){
+                if(x > "-3300"){
+                    x  = x - 300;
+                slide.style.top =x + "px";
+                }
+            }
+        </script>
+    </body>
+</html>
